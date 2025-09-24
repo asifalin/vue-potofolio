@@ -23,8 +23,8 @@
 </template>
 
 <script setup>
-import AboutUs from '../components/Homesection/aboutUs.vue';
-import Herosection from '../components/Homesection/Herosection.vue';
-import Project from '../components/Homesection/Project.vue';
-import Skills from '../components/Homesection/Skills.vue';
+import AboutUs from "../components/Homesection/AboutUs.vue";
+import Herosection from "../components/Homesection/Herosection.vue";
+import Project from "../components/Homesection/Project.vue";
+import Skills from "../components/Homesection/Skills.vue";
 </script>
