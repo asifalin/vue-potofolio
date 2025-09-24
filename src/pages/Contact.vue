@@ -4,13 +4,19 @@
       
       <!-- Heading -->
       <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-          📩 Get In Touch
-        </h2>
-        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
-          Let’s build something amazing together! Whether it’s a project, idea, or collaboration — I’d love to hear from you.
-        </p>
-      </div>
+  <h2 class="text-4xl md:text-5xl font-extrabold text-transparent text-white bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+    📩 <span class="text-blue-600">Get In Touch</span>
+  </h2>
+  <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+    Let’s build something amazing together! Whether it’s a project, idea, or collaboration — I’d love to hear from you.
+  </p>
+  <p class="text-gray-400 mt-4 max-w-3xl mx-auto">
+    I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+    Whether you need a modern website, a responsive web app, or just want to connect for a friendly chat, 
+    feel free to drop a message. Your ideas matter, and I’ll make sure to get back to you as soon as possible. 🚀
+  </p>
+</div>
+
 
       <!-- Contact Form -->
       <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
@@ -27,8 +33,18 @@
           </div>
           <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
             <h3 class="text-xl font-semibold text-blue-400">📞 Phone</h3>
-            <p class="text-gray-300">+92 3XX XXXXXXX</p>
+            <p class="text-gray-300">+92 317 3378315</p>
           </div>
+    <div class="w-full h-56 rounded-xl overflow-hidden shadow-lg">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26059.558330534847!2d74.2928!3d35.9208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e649e3642543b1%3A0x40fd0ca3ca17282b!2sGilgit!5e0!3m2!1sen!2s!4v1727168543274!5m2!1sen!2s" 
+    class="w-full h-full border-0" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
         </div>
 
         <!-- Right Side: Form -->
@@ -85,6 +101,7 @@
   </section>
 </template>
 
+
 <script setup>
 import emailjs from "emailjs-com";
 import { ref, onMounted } from "vue";
@@ -97,7 +114,6 @@ const form = ref({
   subject: "",
   message: ""
 });
-
 
 const successMessage = ref("");
 const errorMessage = ref("");
@@ -117,14 +133,23 @@ const sendEmail = () => {
       successMessage.value = "✅ Your message has been sent successfully!";
       errorMessage.value = "";
       form.value = { name: "", email: "", subject: "", message: "" };
+
+      // ✅ 4 second baad success message hatao
+      setTimeout(() => {
+        successMessage.value = "";
+      }, 4000);
     })
     .catch((error) => {
       console.error("EmailJS Error:", error);
       errorMessage.value = "❌ Failed to send message. Try again later.";
       successMessage.value = "";
+
+      // ✅ 4 second baad error message hatao
+      setTimeout(() => {
+        errorMessage.value = "";
+      }, 4000);
     });
 };
-
 
 // Initialize AOS animations
 onMounted(() => {
@@ -134,4 +159,3 @@ onMounted(() => {
   });
 });
 </script>
-
