@@ -23,19 +23,19 @@
         
         <!-- Left Side: Info -->
         <div class="space-y-8" data-aos="fade-right">
-          <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+          <div class="p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
             <h3 class="text-xl font-semibold text-blue-400">📍 Location</h3>
             <p class="text-gray-300">Gilgit, Pakistan</p>
           </div>
-          <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+          <div class="p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
             <h3 class="text-xl font-semibold text-blue-400">📧 Email</h3>
             <p class="text-gray-300">asifali31733@gmail.com</p>
           </div>
-          <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+          <div class="p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
             <h3 class="text-xl font-semibold text-blue-400">📞 Phone</h3>
             <p class="text-gray-300">+92 317 3378315</p>
           </div>
-    <div class="w-full h-56 rounded-xl overflow-hidden shadow-lg">
+    <div class="w-full h-72 rounded-xl overflow-hidden shadow-lg">
   <iframe 
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26059.558330534847!2d74.2928!3d35.9208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e649e3642543b1%3A0x40fd0ca3ca17282b!2sGilgit!5e0!3m2!1sen!2s!4v1727168543274!5m2!1sen!2s" 
     class="w-full h-full border-0" 

@@ -26,22 +26,35 @@
       <div>
         <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-white transition">Blog</a></li>
-          <li><a href="#" class="hover:text-white transition">FAQs</a></li>
-          <li><a href="#" class="hover:text-white transition">Support</a></li>
-          <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><router-link to="/faqs" class="hover:text-white transition">FAQs</router-link></li>
+      <li><router-link to="/privacy-policy" class="hover:text-white">Privacy Policy</router-link></li>
         </ul>
       </div>
 
       <!-- Social Media -->
       <div>
         <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
-        <div class="flex space-x-4">
-          <a href="#" class="hover:text-blue-400 text-2xl">🌐</a>
-          <a href="#" class="hover:text-sky-400 text-2xl">🐦</a>
-          <a href="#" class="hover:text-blue-600 text-2xl">📘</a>
-          <a href="#" class="hover:text-pink-500 text-2xl">📸</a>
-        </div>
+        <div class="flex space-x-6 text-2xl">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/17GzpVRZBB/" target="_blank" class="hover:text-blue-600">
+      <Icon icon="mdi:facebook" />
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/asif_alee005/?igsh=MWs4MjgzZGl4MHBvbw%3D%3D#" target="_blank" class="hover:text-pink-500">
+      <Icon icon="mdi:instagram" />
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/+923173378315" target="_blank" class="hover:text-green-500">
+      <Icon icon="mdi:whatsapp" />
+    </a>
+
+    <!-- GitHub -->
+    <a href="http://github.com/asifalin" target="_blank" class="hover:text-gray-400">
+      <Icon icon="mdi:github" />
+    </a>
+  </div>
       </div>
     </div>
 
@@ -56,6 +69,8 @@
 </template>
 
 <script setup>
+import { Icon } from '@iconify/vue';
+
 </script>
 
 <style scoped>

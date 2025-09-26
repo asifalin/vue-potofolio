@@ -7,9 +7,11 @@ import Footer from './components/Theam/Footer/Footer.vue';
   <div class="flex flex-col min-h-screen">
     
     <!-- Navbar -->
-    <Navbar />
+   <div class="">
+     <Navbar />
+   </div>
 
-     <main class="flex-grow">
+     <main class="flex-grow mt-24">
       <router-view />   <!-- 👈 yahan pe router ka content show hoga -->
 
     </main>

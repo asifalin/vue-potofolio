@@ -35,9 +35,7 @@
 
       <!-- CTA Buttons -->
       <div class="flex flex-wrap justify-center gap-4 mt-6">
-        <a href="#projects" class="bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600 transition">
-          🚀 View Projects
-        </a>
+      
         
         <router-link 
           to="/Contact"  
@@ -46,7 +44,7 @@
           📩 Contact Me
         </router-link>
         
-        <a href="#contact" class="bg-green-600 px-6 py-2 rounded-lg hover:bg-green-700 transition">
+        <a href="#contact" class="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 transition">
           💼 Hire Me
         </a>
         
